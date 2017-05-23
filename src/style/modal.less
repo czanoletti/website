@@ -1,0 +1,115 @@
+@import 'mixins';
+@import 'variables';
+
+#myModal{
+  .dimensions(100%, 100%);
+  //display: none; /* Hidden by default has to be */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-button{
+  position:relative;
+  float:right;
+}
+.modal-button button{
+  color:black;
+  background-color: transparent;
+  text-decoration: underline;
+
+  &:hover{
+    text-decoration: none;
+  }
+
+}
+
+
+.modal-container{
+  padding: 30px;
+  .container(0 auto);
+  background-color: whitesmoke;
+  .dimensions(100%, 90%);
+}
+
+.modal-body{
+  .dimensions(75%, 100%);
+  position: relative;
+  float: left;
+  clear:both;
+  display:inline-block;
+  text-align: left;
+  //.border();
+
+}
+
+.modal-body h1{
+  margin-bottom: 20px;
+  font-weight: bold;
+
+  @media screen and (max-width: 530px){
+    font-size: 2em;
+  }
+
+  @media screen and (min-width: 900px){
+    font-size: 3em;
+  }
+
+}
+
+.modal-body p{
+  .dimensions(80%, auto);
+  //.border();
+
+  @media screen and (max-width: 530px){
+    font-size: 0.9em;
+  }
+
+  @media screen and (min-width: 900px){
+    .dimensions(75%, auto);
+    font-size: 2em;
+  }
+  @media screen and (max-width: 400px){
+    font-size:0.7em;
+  }
+
+}
+
+.modal-container .row{
+  position: relative;
+  float: left;
+  text-align: left;
+  //.border();
+}
+
+.social-media-element{
+  position:relative;
+  float:left;
+  clear:both;
+  //.border();
+}
+
+.social-media{
+  position:relative;
+  float: left;
+  margin-top: 30px;
+  margin-right: 10px;
+  display: inline-block;
+  //.border();
+}
+
+.social-media-img{
+  position: relative;
+  display: inline-block;
+  .dimensions(70px, 70px);
+
+  @media screen and (max-width: 450px){
+    .dimensions(40px, 40px);
+  }
+
+
+}

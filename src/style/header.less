@@ -1,0 +1,76 @@
+@import 'mixins';
+@import 'variables';
+
+#jumbotron-header{
+  .dimensions(100%, 75%);
+  text-align: center;
+  color: black;
+  background-color: @jumbotron-bg;
+}
+
+
+.header-container{
+  .dimensions(90%, 90%);
+  .container(0 auto);
+  .verticalCenter();
+  //border: 1px solid white;
+  text-align: center;
+
+}
+
+.header-container h1{
+  font-size: 5em;
+  color: white;
+  margin-bottom: 10%;
+  margin-top:10%;
+
+
+  @media only screen and (min-width : 500px) and (orientation: landscape) {
+    font-size:3em;
+    margin-top:5%;
+    margin-bottom:5%;
+  }
+
+
+}
+
+.header-container figure{
+  .container(0 auto);
+  .dimensions(50%, auto);
+  //border: 1px solid white;
+  margin-bottom: 10%;
+
+
+  @media only screen and (min-width : 500px) and (orientation: landscape) {
+    .dimensions(20%, auto);
+    margin-bottom: 5%;
+}
+
+
+}
+
+.header-container figure img{
+  .dimensions(100%, auto);
+
+}
+
+.header-container blockquote{
+  font-size:5em;
+  text-align: left;
+
+  @media only screen and (min-width : 500px) and (orientation: landscape) {
+    font-size: 3em;
+    text-align: center;
+  }
+  @media only screen and (min-width : 410px) and (orientation: portrait) {
+    font-size:2.5em;
+    text-align: center;
+  }
+
+}
+
+.header-container blockquote cite{
+  font-style: italic;
+  color: whitesmoke;
+  text-align: right;
+}

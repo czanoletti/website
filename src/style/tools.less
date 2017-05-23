@@ -1,0 +1,66 @@
+@import 'mixins';
+@import 'variables';
+
+#tools{
+  .container(0 auto);
+  //.border();
+}
+
+#tools-elements{
+  .dimensions(90%, auto);
+  .container(0 auto);
+  //border: 1px solid red;
+}
+
+.tools-container{
+  text-align: center;
+  //.border();
+  .container(0 auto);
+}
+
+.tools-container h1{
+  margin:100px 0;
+}
+
+#tools-elements{
+  position:relative;
+  .dimensions(90%,auto);
+  .container(0 auto);
+  //border: 1px solid violet;
+}
+
+#tools-elements figure{
+  margin-bottom: 5px;
+  display: inline-block;
+  .dimensions(250px, 250px);
+  background-color: @jumbotron-bg;
+  position: relative;
+  //.border();
+
+  @media screen and (max-width: 620px){
+    .dimensions(125px,125px);
+  }
+
+  &:hover{
+    filter: opacity(50%);
+    background-color: @tools-hover-bg;
+  }
+}
+
+#tools-elements figcaption{
+  color: @bg;
+  font-size:1.5em;
+  font-weight: bold;
+  position:relative;
+  z-index:1;
+}
+
+#tools-elements img{
+  position:relative;
+  z-index:0;
+  top: 25%;
+  display: inline-block;
+  .dimensions(50%, 50%);
+  filter: grayscale(100%) opacity(50%);
+}
+

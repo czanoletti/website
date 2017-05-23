@@ -1,0 +1,41 @@
+
+@font-face {
+  font-family: maryweather;
+  src: url(../font/Merriweather-Regular.ttf);
+}
+
+@font-face {
+  font-family: robotomono;
+  src: url(../font/RobotoMono-Regular.ttf);
+}
+
+*{
+  margin: 0;
+  border:0;
+  padding:0;
+  font-family: maryweather;
+}
+
+.main-container{
+  margin: 0 auto;
+  width: 100vw;
+
+  @media screen and (min-width: 1200px){
+     max-width: 95vw;
+  }
+}
+
+@import 'normalize.css';
+@import 'animate.css';
+@import '~bootstrap/less/bootstrap.less';
+
+@import "variables";
+@import "mixins";
+
+@import 'navigation';
+@import "header";
+@import "about";
+@import "tools";
+@import "demos";
+@import "footer";
+@import "modal";

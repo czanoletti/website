@@ -9,41 +9,7 @@ export class About extends React.Component<any, any> {
         super();
     }
 
-    componentDidMount(){
-        console.log(navigator.userAgent);
-        let controller = new ScrollMagic.Controller();
 
-        if(this.detectMobile()){
-
-            new ScrollMagic.Scene({triggerElement: "#navigation", offset: 250})
-                .setPin("#navigation")
-                // .addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
-                .addTo(controller);
-        }else{
-            new ScrollMagic.Scene({triggerElement: "#navigation", offset: 300})
-                .setPin("#navigation")
-                // .addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
-                .addTo(controller);
-        }
-
-
-    }
-
-    detectMobile(){
-        if( navigator.userAgent.match(/Android/i)
-            || navigator.userAgent.match(/webOS/i)
-            || navigator.userAgent.match(/iPhone/i)
-            || navigator.userAgent.match(/iPad/i)
-            || navigator.userAgent.match(/iPod/i)
-            || navigator.userAgent.match(/BlackBerry/i)
-            || navigator.userAgent.match(/Windows Phone/i)
-        ){
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
 
     render(){
         return (
@@ -56,10 +22,10 @@ export class About extends React.Component<any, any> {
                                   description="Coding responsively!" />
 
                     <AboutElement url={require('../../img/js.svg')}
-                                  description="Variety of Libraries and Frameworks" />
+                                  description="Variety of libraries and frameworks" />
 
                     <AboutElement url={require('../../img/math.svg')}
-                                  description="I tutor the language of the universe" />
+                                  description="I tutor math and web development" />
 
                 </div>
 

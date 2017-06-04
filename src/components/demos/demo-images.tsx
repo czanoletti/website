@@ -16,8 +16,12 @@ export class DemoImg extends React.Component<demoImgProps, any> {
 
     render(){
         return (
-            <span><img className="img-responsive"
-                                       src={require(`../../${this.props.src}`)} /></span>
+            <span><a href="">
+                <img className="img-responsive"
+                                       src={require(`../../${this.props.src}`)} />
+
+            </a>
+            </span>
         );
     }
 }

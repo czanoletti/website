@@ -76,9 +76,9 @@ export class MyModal extends React.Component<modalProps, modalState> {
                     </p>
 
 
-                        <ModalElement src={require('../../img/youtube.svg')} />
-                        <ModalElement src={require('../../img/github.svg')} />
-                        <ModalElement src={require('../../img/twitter.svg')} />
+                        <ModalElement url="https://youtube.com" src={require('../../img/youtube.svg')} />
+                        <ModalElement url="https://github.com" src={require('../../img/github.svg')} />
+                        <ModalElement url="https://twitter.com" src={require('../../img/twitter.svg')} />
 
                 </div>
             </div>

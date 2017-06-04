@@ -14,7 +14,7 @@
 .demos-elements{
   .dimensions(80%, auto);
   .container(0 auto);
-  //.border();
+
 }
 
 .demos-elements figure{
@@ -22,6 +22,10 @@
   .dimensions(80%, auto);
   //border: 1px solid red;
   overflow-y: hidden;
+
+  &:hover{
+    box-shadow: 10px 10px 5px #888888;
+  }
 
   @media screen and (max-width: 992px){
     text-align: center;
@@ -31,6 +35,7 @@
 }
 
 .demos-elements figure img{
+  z-index:90;
   .container(0 auto);
   display: block;
   .dimensions(100%, auto);
@@ -47,7 +52,7 @@
 
 .demos-elements figure span img{
   display: inline-block;
-  .dimensions(30px, 30px);
+  .dimensions(40px, 40px);
   font-size:0.5em;
-  filter: grayscale(90%) opacity(75%);
+  filter: grayscale(70%) opacity(75%);
 }

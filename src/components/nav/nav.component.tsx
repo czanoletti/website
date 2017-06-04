@@ -1,14 +1,24 @@
 import * as React from 'react';
 import {MyModal} from "../modal/modal.component";
+// import * as $ from 'jquery';
+//
+// interface JQuery {
+//     sticky():void;
+// }
+
+let sticky = require('../../sticky/sticky');
+
 
 declare let require: any;
 
 export class Navigation extends React.Component<any, any> {
     public modal:any;
-    constructor() {
-        super();
+    private nav: any;
 
-        this.state = {
+    constructor() {
+
+       super();
+       this.state = {
             modalActive: false
         };
 
@@ -33,7 +43,11 @@ export class Navigation extends React.Component<any, any> {
 
     render(){
         return (
-            <nav className="nav navbar-default" id="navigation">
+            <nav className="nav navbar-default" ref={(navigation: any)=> {this.nav = navigation}}
+                 id="navigation"
+                 role="navigation"
+                 data-options="sticky_on: all">
+
                 <div className="container-fluid">
                     <div className="">
 
@@ -55,6 +69,12 @@ export class Navigation extends React.Component<any, any> {
 
             </nav>
         );
+    }
+
+    componentDidMount(){
+
+        sticky(this.nav);
+
     }
 
 }

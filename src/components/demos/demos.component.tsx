@@ -8,23 +8,29 @@ declare let ScrollMagic:any;
 export class Demos extends React.Component<any, any> {
     object :any = {
 
-        spotify: {
-            name: 'Spotify',
-            lib: ['angular', 'rxjs'],
-            description: 'This is a simple engine to search for artists through the Spotify API.'
+        even_simpler: {
+            name: 'Even simpler',
+            lib: ['javascript', 'hapi', 'nodejs', 'pug'],
+            description: "This app show a server nodejs framework called hapi, that works on a template engine. The page itself if javascript mini demos without library usage.",
+            link: 'https://github.com',
+            img_src: 'mongo.png'
         },
 
-        contentful_react: {
-            name: 'Contentful',
-            lib: ['react', 'contentful'],
-            description: 'This demo shows the functionality of the CMS contentful'
+        todo_app: {
+            name: 'Todo App',
+            lib: ['mongo', 'express','angular', 'nodejs'],
+            link: 'https://facebook.com',
+            img_src: 'hapi.png',
+            description: 'Todo application showing CRUD actions from a mongodb server. Create your todo and share it on the board.',
         },
 
 
-        socket_io:{
-            name: 'Data and Sockets',
-            lib: ['socketio', 'angular'],
-            description: 'This app shows how simple can be to interchange data through sockets.'
+        recipes:{
+            name: 'Recipes',
+            lib: ['elephant', 'pug'],
+            description: 'Template engine pug for a recipe application that makes CRUD applications on a postgreSQL database.',
+            link: 'https://www.w3schools.com.com',
+            img_src: 'angular.png'
         }
     };
 
@@ -43,6 +49,7 @@ export class Demos extends React.Component<any, any> {
     }
 
     render(){
+
         return (
             <div className="demos-container">
                 <h1>Demos</h1>
@@ -51,10 +58,14 @@ export class Demos extends React.Component<any, any> {
                     {
 
                         Object.keys(this.object).map((key, i)=> {
-                            return <Demo src={this.object[key].lib}
+
+                            return <Demo lib={this.object[key].lib}
                                          name={this.object[key].name}
                                          description={this.object[key].description}
-                                         key={i}/>
+                                         link={this.object[key].link}
+                                         img_src={require(`../../img/${this.object[key].img_src}`)}
+                                         key={i}
+                            />
 
                         })
 

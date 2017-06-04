@@ -11,26 +11,25 @@ export class ToolsElement extends React.Component<toolsProps, any> {
     };
 
     revealText(){
-        console.log('mouse enter');
+
         let caption = this.captions;
         let fig = this.fig;
-        console.log(caption);
+
         caption.style.visibility = 'visible';
         fig.style.backgroundColor = '#515151';
     }
 
     unRevealText(){
-        console.log('mouse leave');
+
         let caption = this.captions;
         let fig = this.fig;
-        console.log(caption);
+
         caption.style.visibility = 'hidden';
         fig.style.backgroundColor = '#F3F3F3';
     }
 
     componentDidMount(){
         let caption = this.captions;
-        console.log(caption);
         caption.style.visibility = 'hidden';
     }
 

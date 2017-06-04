@@ -19,7 +19,6 @@ export class Demo extends React.Component<demoProps, any> {
     };
 
     render(){
-        console.log(this.props.img_src);
         return (
             <div className="col-xs-12 col-md-4">
 

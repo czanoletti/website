@@ -23,6 +23,7 @@ export class MyModal extends React.Component<modalProps, modalState> {
     ];
 
     private modal: any;
+
     constructor(props: modalProps) {
         super(props);
 
@@ -72,7 +73,7 @@ export class MyModal extends React.Component<modalProps, modalState> {
                         I am Cesar Zanoletti. Binary Husky is my alias.
                         I do full stack web development with Javascript.
                         I do mathematics and web development video tutorials.
-                        Come and meet my work. Let's share knowledge.
+                        Come and checkout my work. Let's share knowledge.
                     </p>
 
 

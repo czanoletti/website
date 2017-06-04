@@ -27,6 +27,7 @@ export class Navigation extends React.Component<any, any> {
     }
 
     closeModal() {
+
         this.setState({
             modalActive: false
         });

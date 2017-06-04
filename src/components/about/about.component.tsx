@@ -19,13 +19,13 @@ export class About extends React.Component<any, any> {
 
                 <div id="about-elements" className="animated row">
                     <AboutElement url={require('../../img/responsive.svg')}
-                                  description="Coding responsively!" />
+                                  description="Coding Responsively!" />
 
                     <AboutElement url={require('../../img/js.svg')}
-                                  description="Variety of libraries and frameworks" />
+                                  description="Javascript Libraries and Frameworks" />
 
                     <AboutElement url={require('../../img/math.svg')}
-                                  description="I tutor math and web development" />
+                                  description="I Tutor Mathematics and Web Development" />
 
                 </div>
 

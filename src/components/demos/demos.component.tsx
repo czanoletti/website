@@ -8,29 +8,21 @@ declare let ScrollMagic:any;
 export class Demos extends React.Component<any, any> {
     object :any = {
 
-        even_simpler: {
-            name: 'Even simpler',
-            lib: ['javascript', 'hapi', 'nodejs', 'pug'],
-            description: "This app show a server nodejs framework called hapi, that works on a template engine. The page itself if javascript mini demos without library usage.",
-            link: 'https://github.com',
-            img_src: 'mongo.png'
-        },
-
         todo_app: {
             name: 'Todo App',
             lib: ['mongo', 'express','angular', 'nodejs'],
-            link: 'https://facebook.com',
-            img_src: 'hapi.png',
-            description: 'Todo application showing CRUD actions from a mongodb server. Create your todo and share it on the board.',
+            link: 'https://nameless-beach-38692.herokuapp.com/',
+            img_src: 'todos.png',
+            description: 'Todo application showing CRUD operations from a mongodb database. Create your todo and share it on the board.',
         },
 
 
         recipes:{
             name: 'Recipes',
             lib: ['elephant', 'pug'],
-            description: 'Template engine pug for a recipe application that makes CRUD applications on a postgreSQL database.',
-            link: 'https://www.w3schools.com.com',
-            img_src: 'angular.png'
+            description: 'Use of template engine, pug for a recipe application that makes CRUD applications on a postgreSQL database.',
+            link: 'https://calm-mountain-92745.herokuapp.com/',
+            img_src: 'recipes.png'
         }
     };
 

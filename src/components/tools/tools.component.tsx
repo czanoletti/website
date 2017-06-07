@@ -30,8 +30,8 @@ export class Tools extends React.Component<any, any> {
                     <ToolsElement url={require('../../img/google analytics.png')}
                                   name="Analytics" src="https://www.google.com/intl/es/analytics"/>
 
-                    <ToolsElement url={require('../../img/sentry.png')}
-                                  name="Sentry" src="https://sentry.io/pricing"/>
+                    <ToolsElement url={require('../../img/heroku.png')}
+                                  name="Heroku" src="https://www.heroku.com"/>
 
                     <ToolsElement url={require('../../img/git.png')}
                                   name="Git" src="https://git-scm.com" />

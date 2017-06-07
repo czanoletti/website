@@ -20,7 +20,7 @@ export class Demo extends React.Component<demoProps, any> {
 
     render(){
         return (
-            <div className="col-xs-12 col-md-4">
+            <div className="col-xs-12 col-md-6">
 
                 <figure>
                     <a href={this.props.link} target="_blank"><img src={this.props.img_src}/></a>

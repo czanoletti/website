@@ -22,7 +22,7 @@ export class About extends React.Component<any, any> {
                                   description="Coding Responsively!" />
 
                     <AboutElement url={require('../../img/js.svg')}
-                                  description="Javascript Libraries and Frameworks" />
+                                  description="I Use Javascript Libraries and Frameworks" />
 
                     <AboutElement url={require('../../img/math.svg')}
                                   description="I Tutor Mathematics and Web Development" />

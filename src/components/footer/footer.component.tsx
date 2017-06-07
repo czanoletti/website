@@ -11,7 +11,7 @@ export class Footer extends React.Component<any, any> {
     render(){
         return (
             <div className="footer">
-                <p>Copyright &copy; Designer: Diego Rodas, Developer: Cesar Zanoletti</p>
+                <p>Copyright &copy; Diego Rodas</p>
             </div>
         );
     }

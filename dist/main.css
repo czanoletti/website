@@ -1,0 +1,499 @@
+.visible {
+  visibility: visible;
+}
+.nonvisible {
+  visibility: hidden;
+}
+.about-container {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+.about-container h1 {
+  margin-bottom: 50px;
+}
+#about-elements {
+  margin-bottom: 30px;
+}
+#about-elements figure {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+}
+@media screen and (max-width: 990px) {
+  #about-elements figure {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-elements figure {
+    width: 80%;
+    height: 160px;
+  }
+}
+@media screen and (max-width: 530px) {
+  #about-elements figure {
+    width: 80%;
+    height: 200px;
+  }
+}
+#about-elements img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  float: left;
+  top: 30%;
+  margin-left: 20px;
+  width: 125px;
+  height: 90px;
+}
+@media screen and (max-width: 990px) {
+  #about-elements img {
+    margin-left: 0;
+    width: 100px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-elements img {
+    width: 125px;
+    height: 90px;
+  }
+}
+@media screen and (max-width: 530px) {
+  #about-elements img {
+    width: 125px;
+    height: 90px;
+  }
+}
+.about-container figcaption {
+  width: 100px;
+  height: auto;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  float: left;
+  bottom: 20%;
+  left: 50%;
+}
+@media screen and (max-width: 990px) {
+  .about-container figcaption {
+    bottom: 40%;
+    width: 100px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-container figcaption {
+    width: 100px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 530px) {
+  .about-container figcaption {
+    width: 100px;
+    height: auto;
+  }
+}
+.visible {
+  visibility: visible;
+}
+.nonvisible {
+  visibility: hidden;
+}
+.demos-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.demos-container h1 {
+  margin: 70px 0;
+  text-align: center;
+}
+.demos-elements {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+.demos-elements figure {
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  overflow-y: hidden;
+}
+.demos-elements figure:hover {
+  -webkit-box-shadow: 10px 10px 5px #888888;
+     -moz-box-shadow: 10px 10px 5px #888888;
+          box-shadow: 10px 10px 5px #888888;
+}
+@media screen and (max-width: 992px) {
+  .demos-elements figure {
+    text-align: center;
+  }
+}
+.demos-elements figure img {
+  z-index: 90;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 992px) {
+  .demos-elements figure img {
+    width: 60%;
+    height: 60%;
+  }
+}
+.demos-elements figure span {
+  margin: 0 auto;
+}
+.demos-elements figure span img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 0.5em;
+  -webkit-filter: grayscale(70%) opacity(75%);
+          filter: grayscale(70%) opacity(75%);
+}
+.visible {
+  visibility: visible;
+}
+.nonvisible {
+  visibility: hidden;
+}
+#footer {
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+}
+#footer p {
+  position: relative;
+  top: 25px;
+  -webkit-transform: translateY(50%);
+     -moz-transform: translateY(50%);
+          transform: translateY(50%);
+}
+.visible {
+  visibility: visible;
+}
+.nonvisible {
+  visibility: hidden;
+}
+#jumbotron-header {
+  width: 100%;
+  height: 75%;
+  text-align: center;
+  color: black;
+  background-color: #F3F3F3;
+}
+.header-container {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+}
+.header-container h1 {
+  font-size: 5em;
+  color: white;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+@media only screen and (min-width: 500px) and (orientation: landscape) {
+  .header-container h1 {
+    font-size: 3em;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+.header-container figure {
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  margin-bottom: 10%;
+}
+@media only screen and (min-width: 500px) and (orientation: landscape) {
+  .header-container figure {
+    width: 20%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+}
+.header-container figure img {
+  width: 100%;
+  height: auto;
+}
+.header-container blockquote {
+  font-size: 5em;
+  text-align: left;
+}
+@media only screen and (min-width: 500px) and (orientation: landscape) {
+  .header-container blockquote {
+    font-size: 3em;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 410px) and (orientation: portrait) {
+  .header-container blockquote {
+    font-size: 2.5em;
+    text-align: center;
+  }
+}
+.header-container blockquote cite {
+  font-style: italic;
+  color: whitesmoke;
+  text-align: right;
+}
+.visible {
+  visibility: visible;
+}
+.nonvisible {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.nonvisible {
+  visibility: hidden;
+}
+#myModal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 100;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+.modal-button {
+  position: relative;
+  float: right;
+}
+.modal-button button {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.modal-button button:hover {
+  text-decoration: none;
+}
+.modal-container {
+  padding: 30px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 90%;
+}
+.modal-body {
+  width: 75%;
+  height: 100%;
+  position: relative;
+  float: left;
+  clear: both;
+  display: inline-block;
+  text-align: left;
+}
+.modal-body h1 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 3em;
+}
+@media screen and (max-width: 720px) {
+  .modal-body h1 {
+    font-size: 1.5em;
+  }
+}
+.modal-body p {
+  width: 80%;
+  height: auto;
+}
+@media screen and (max-width: 720px) {
+  .modal-body p {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 360px) {
+  .modal-body p {
+    font-size: 0.8em;
+  }
+}
+.modal-container .row {
+  position: relative;
+  float: left;
+  text-align: left;
+}
+.social-media-element {
+  position: relative;
+  float: left;
+  clear: both;
+}
+.social-media {
+  position: relative;
+  float: left;
+  margin-top: 30px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.social-media-img {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
+@media screen and (max-width: 450px) {
+  .social-media-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-height: 550px) {
+  .social-media-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+.visible {
+  visibility: visible;
+}
+.nonvisible {
+  visibility: hidden;
+}
+#navigation {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  background-color: #64ABFF;
+  z-index: 6;
+  top: 10px;
+}
+.navStick {
+  position: fixed;
+  z-index: 5;
+}
+#logo {
+  color: white;
+  float: left;
+}
+#contact {
+  position: relative;
+  display: inline;
+  float: right;
+  left: 0;
+}
+#contact-btn {
+  border: 1px solid white;
+  color: white;
+  height: 30px;
+  text-align: center;
+  margin-right: 50px;
+  display: inline-block;
+  line-height: 0;
+}
+#contact-btn:hover {
+  text-decoration: underline;
+}
+#contact-btn:active {
+  text-decoration: none;
+}
+#logo-img {
+  width: 40px;
+  height: auto;
+  margin-left: 30px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  #logo-img {
+    margin-left: 10px;
+  }
+}
+.visible {
+  visibility: visible;
+}
+.nonvisible {
+  visibility: hidden;
+}
+#tools {
+  margin: 0 auto;
+}
+#tools-elements {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+.tools-container {
+  text-align: center;
+  margin: 0 auto;
+}
+.tools-container h1 {
+  margin: 100px 0;
+}
+#tools-elements {
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+#tools-elements figure {
+  margin-bottom: 5px;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  background-color: #F3F3F3;
+  position: relative;
+}
+@media screen and (max-width: 620px) {
+  #tools-elements figure {
+    width: 125px;
+    height: 125px;
+  }
+}
+#tools-elements figure:hover {
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+  background-color: #515151;
+}
+#tools-elements figcaption {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+#tools-elements img {
+  position: relative;
+  z-index: 0;
+  top: 25%;
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  -webkit-filter: grayscale(100%) opacity(50%);
+          filter: grayscale(100%) opacity(50%);
+}
+
+/*# sourceMappingURL=main.css.map*/

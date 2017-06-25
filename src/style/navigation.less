@@ -4,7 +4,7 @@
 #navigation{
   overflow: hidden;
   padding: 10px;
-  .dimensions(100%, auto);
+  .dimensions(100%, 80px);
   background-color: @nav-bg;
   z-index:6;
   top: 10px; // required as well.
@@ -28,6 +28,21 @@
   left:0;
 }
 
+@keyframes contact-button{
+  from
+  {
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+  }
+  to
+  {
+    background-color: white;
+    border:1px solid black;
+    color:black;
+  }
+}
+
 #contact-btn{
   border: 1px solid white;
   color:white;
@@ -39,6 +54,14 @@
 
   &:hover{
     text-decoration: underline;
+    animation: contact-button 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  &:focus{
+    text-decoration: underline;
+    animation: contact-button 0.5s;
+    animation-fill-mode: forwards;
   }
 
   &:active{
@@ -60,7 +83,31 @@
 
 }
 
+#languages{
+  //border: 1px solid black;
+  width: auto;
+  display: inline;
+  top:60px;
+  position: absolute;
+  left: 6%;
+}
 
+.language{
+  //border: 1px solid black;
+  .dimensions(auto, 10px);
+  font-size:10px;
+  text-decoration: underline;
+  color: white;
+  margin-right: 5px;
+  top:60px;
+}
+
+#en{
+  //left:7%;
+}
+#es{
+  //left: 15%;
+}
 
 
 

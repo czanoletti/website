@@ -55,7 +55,12 @@ export class Navigation extends React.Component<any, any> {
                         <a id="logo" className="navbar-brand" href="#">
                             <img id="logo-img" src={require('../../img/binaryhusky.svg')} />
                         </a>
+                        <ul id="languages">
 
+                            <a id="en" className="language" href="https://czanoletti.github.io">English</a>
+                            <a id="es" className="language" href="https://czanoletti.github.io/es">Español</a>
+
+                        </ul>
                         <ul id="contact" className="nav navbar-nav">
                             <li>
                                 <a onClick={(e)=>{e.preventDefault(); this.openModal()}} id="contact-btn" href="#">

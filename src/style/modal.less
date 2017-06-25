@@ -33,7 +33,8 @@
   padding: 30px;
   .container(0 auto);
   background-color: whitesmoke;
-  .dimensions(100%, 90%);
+  .dimensions(100%, 100%);
+
 }
 
 .modal-body{
@@ -44,6 +45,12 @@
   display:inline-block;
   text-align: left;
   //.border();
+
+  @media screen and (max-width: 500px){
+    font-size: 0.8em;
+    .dimensions(100%, 100%)
+  }
+
 
 }
 
@@ -74,7 +81,7 @@
   @media screen and (max-width: 720px){
     font-size: 1em;
   }
-  @media screen and (max-width: 360px){
+  @media screen and (max-width: 500px){
     font-size: 0.8em;
   }
 
@@ -110,11 +117,17 @@
   .dimensions(70px, 70px);
 
   @media screen and (max-width: 450px){
-    .dimensions(40px, 40px);
+    .dimensions(30px, 30px);
   }
-  @media screen and (max-height: 550px){
-    .dimensions(40px, 40px);
+  @media screen and (max-height: 500px){
+    .dimensions(30px, 30px);
+    bottom:30px;
   }
 
+  @media screen and (max-width: 500px) {
+
+    .dimensions(30px, 30px);
+    bottom: 30px;
+  }
 
 }

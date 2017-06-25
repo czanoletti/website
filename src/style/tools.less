@@ -6,11 +6,6 @@
   //.border();
 }
 
-#tools-elements{
-  .dimensions(90%, auto);
-  .container(0 auto);
-  //border: 1px solid red;
-}
 
 .tools-container{
   text-align: center;
@@ -24,9 +19,10 @@
 
 #tools-elements{
   position:relative;
-  .dimensions(90%,auto);
+  .dimensions(auto,auto);
   .container(0 auto);
   //border: 1px solid violet;
+  display:inline-block;
 }
 
 #tools-elements figure{
@@ -35,7 +31,7 @@
   .dimensions(250px, 250px);
   background-color: @jumbotron-bg;
   position: relative;
-  //.border();
+  //border:1px solid black;
 
   @media screen and (max-width: 620px){
     .dimensions(125px,125px);

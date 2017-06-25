@@ -4,9 +4,10 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
+    "start-host": "webpack-dev-server --inline --port 8000 --host 192.168.0.80",
     "start": "webpack-dev-server --inline --port 8000",
-    "build": "webpack --config webpack.config.js",
-    "production": "webpack -p --config webpack.config.js"
+    "build": "rm -rf dist/** && webpack --config webpack.config.js",
+    "production": "rm -rf dist/** && webpack -p --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",

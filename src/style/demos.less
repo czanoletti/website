@@ -17,18 +17,35 @@
 
 }
 
+@keyframes trans {
+  from{
+    box-shadow:0;
+  }
+  to{
+    box-shadow: 5px 5px 10px  #888888;
+  }
+}
+
 .demos-elements figure{
   .container(0 auto);
-  .dimensions(80%, auto);
-  //border: 1px solid red;
+  .dimensions(80%, 450px);
   overflow-y: hidden;
 
   &:hover{
-    box-shadow: 10px 10px 5px #888888;
+    animation: trans 0.5s forwards;
+  }
+  &:focus{
+    animation: trans 0.5s forwards;
   }
 
   @media screen and (max-width: 992px){
     text-align: center;
+  }
+
+  @media screen and (max-width: 410px){
+    .dimensions(100%, 480px);
+    margin-bottom:10px;
+
   }
 
 
@@ -41,7 +58,7 @@
   .dimensions(100%, auto);
 
   @media screen and (max-width: 992px){
-    .dimensions(60%, 60%);
+    .dimensions(50%, 50%);
   }
 
 }
